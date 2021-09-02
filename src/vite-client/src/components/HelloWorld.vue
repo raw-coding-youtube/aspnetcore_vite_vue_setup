@@ -31,7 +31,7 @@ const state = reactive({
   message: 'empty'
  })
 
-fetch('http://localhost:5000/test')
+fetch('/test')
   .then(res => res.text())
   .then(t => state.message = t)
 
