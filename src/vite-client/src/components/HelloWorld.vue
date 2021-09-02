@@ -31,7 +31,7 @@ const state = reactive({
   message: 'empty'
  })
 
-fetch('/test')
+fetch('/api/test')
   .then(res => res.text())
   .then(t => state.message = t)
 
